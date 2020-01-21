@@ -2,7 +2,7 @@
 \alias{m6a_methyl_1}
 \docType{data}
 \title{
-
+Function
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
