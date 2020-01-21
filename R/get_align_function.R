@@ -38,7 +38,6 @@ function(num_bin, trans_info, cds_by_tx0){
     cds_width_ngtv_sum   <- sum(cds_width_ngtv)
     
     # pstv
-    
     align_index          <- intersect(which(cds_start_pstv <= methyl_pos_pstv), which(cds_end_pstv >= methyl_pos_pstv))
     dist_from_start      <- trans_cds_exist_pstv[, 'methyl_pos'] - cds_start_pstv[align_index] + 1
     align_index_before   <- which(cds_start_pstv <= methyl_pos_pstv) - 1

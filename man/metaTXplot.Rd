@@ -2,8 +2,7 @@
 \alias{metaTXplot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function
-}
+AA}
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
@@ -110,14 +109,14 @@ function (features, txdb, num_bin = 10, includeNeighborDNA = FALSE,
                 legend.position = "bottom") + geom_density(adjust = adjust, 
                 aes(fill = factor(type), colour = factor(type)), 
                 alpha = 0.25, fill = "seagreen3", colour = "seagreen3") + 
-                xlab("") + ylab("Density\n                     ") + 
-                annotate("text", x = num_bin_sum/10, y = -0.007, 
-                  label = "Promoter") + annotate("text", x = num_bin_sum * 
-                3/10, y = -0.007, label = "5'UTR") + annotate("text", 
-                x = num_bin_sum/2, y = -0.007, label = "CDS") + 
-                annotate("text", x = num_bin_sum * 7/10, y = -0.007, 
-                  label = "3'UTR") + annotate("text", x = num_bin_sum * 
-                9/10, y = -0.007, label = "Tail") + geom_vline(xintercept = c(1, 
+                xlab("") + ylab("Density\n       ") + annotate("text", 
+                x = num_bin_sum/10, y = -0.007, label = "Promoter") + 
+                annotate("text", x = num_bin_sum * 3/10, y = -0.007, 
+                  label = "5'UTR") + annotate("text", x = num_bin_sum/2, 
+                y = -0.007, label = "CDS") + annotate("text", 
+                x = num_bin_sum * 7/10, y = -0.007, label = "3'UTR") + 
+                annotate("text", x = num_bin_sum * 9/10, y = -0.007, 
+                  label = "Tail") + geom_vline(xintercept = c(1, 
                 2, 3, 4) * num_bin_sum/5, linetype = "dotted", 
                 size = 0.5, colour = "black") + annotate("rect", 
                 xmin = num_bin_sum * 2/10, xmax = num_bin_sum * 
@@ -140,7 +139,7 @@ function (features, txdb, num_bin = 10, includeNeighborDNA = FALSE,
             legend.position = "bottom") + geom_density(adjust = adjust, 
             aes(fill = factor(type), colour = factor(type)), 
             alpha = 0.25, fill = "seagreen3", colour = "seagreen3") + 
-            xlab("") + ylab("Density\n                 ") + annotate("text", 
+            xlab("") + ylab("Density\n                ") + annotate("text", 
             x = num_bin_sum * 1/6, y = -0.007, label = "5'UTR") + 
             annotate("text", x = num_bin_sum/2, y = -0.007, label = "CDS") + 
             annotate("text", x = num_bin_sum * 5/6, y = -0.007, 
@@ -173,7 +172,7 @@ function (features, txdb, num_bin = 10, includeNeighborDNA = FALSE,
                   size = 0.5, linetype = 2, lineend = "butt"), 
                 legend.position = "bottom") + geom_density(adjust = adjust, 
                 aes(fill = factor(type), colour = factor(type)), 
-                alpha = 0.25) + xlab("") + ylab("Density\n                     ") + 
+                alpha = 0.25) + xlab("") + ylab("Density\n       ") + 
                 annotate("text", x = num_bin_sum/10, y = -0.007, 
                   label = "Promoter") + annotate("text", x = num_bin_sum * 
                 3/10, y = -0.007, label = "5'UTR") + annotate("text", 
@@ -201,7 +200,7 @@ function (features, txdb, num_bin = 10, includeNeighborDNA = FALSE,
                   size = 0.5, linetype = 2, lineend = "butt"), 
                 legend.position = "bottom") + geom_density(adjust = adjust, 
                 aes(fill = factor(type), colour = factor(type)), 
-                alpha = 0.25) + xlab("") + ylab("Density\n                     ") + 
+                alpha = 0.25) + xlab("") + ylab("Density\n                ") + 
                 annotate("text", x = num_bin_sum * 1/6, y = -0.007, 
                   label = "5'UTR") + annotate("text", x = num_bin_sum/2, 
                 y = -0.007, label = "CDS") + annotate("text", 
