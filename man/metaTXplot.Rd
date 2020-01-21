@@ -2,13 +2,13 @@
 \alias{metaTXplot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function
+%%  ~~function to do ... ~~
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
-metaTXplot(features, txdb, num_bin = 10, includeNeighborDNA = FALSE, comparison = FALSE, lambda = 1, adjust = 0.25, title = "Distribution on mRNA", legend = "sample")
+metaTXplot(features, txdb, num_bin = 10, includeNeighborDNA = FALSE, comparison = FALSE, lambda = 1, adjust = 0.3, title = "Distribution on mRNA", legend = "sample")
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -72,7 +72,7 @@ metaTXplot(features, txdb, num_bin = 10, includeNeighborDNA = FALSE, comparison 
 
 ## The function is currently defined as
 function (features, txdb, num_bin = 10, includeNeighborDNA = FALSE, 
-    comparison = FALSE, lambda = 1, adjust = 0.25, title = "Distribution on mRNA", 
+    comparison = FALSE, lambda = 1, adjust = 0.3, title = "Distribution on mRNA", 
     legend = "sample") 
 {
     print("It may take a few minutes")

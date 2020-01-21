@@ -2,7 +2,7 @@
 \alias{m6a_methyl_2}
 \docType{data}
 \title{
-Data
+%%   ~~ data name/kind ... ~~
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~

@@ -1,11 +1,9 @@
 Package: MetaTX
 Type: Package
-Title: Sketch a transcriptomic view of RNA-related features
+Title: What the package does (short line)
 Version: 1.0
 Date: 2020-01-21
-Author: Yue Wang
-Maintainer: Yue Wang <15905529958@163.com>
-Description: The metaTX package can estimate the distribution of RNA-related genomic features. It incorporates the coordinate inconsistency, width variation and isoform ambiguity into consideration, and its EM algorithm performs empirical correc-tion of biases with current existing methods. 
+Author: Who wrote it
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
 License: What license is it under?
-NeedsCompilation: no
-Packaged: 2020-01-20 18:49:16 UTC; apple
