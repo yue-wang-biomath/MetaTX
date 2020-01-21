@@ -2,7 +2,7 @@
 \alias{m6a_methyl_2}
 \docType{data}
 \title{
-%%   ~~ data name/kind ... ~~
+Sample data for checking CDS region
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
