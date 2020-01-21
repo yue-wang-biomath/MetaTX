@@ -2,10 +2,10 @@
 \alias{isoformProb}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function: get isoform probability
+
 }
 \description{
-get isoform probability
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
 isoformProb(features, txdb, num_bin = 10, includeNeighborDNA = FALSE)

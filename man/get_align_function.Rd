@@ -2,10 +2,10 @@
 \alias{get_align_function}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function: map features to mRNA
+
 }
 \description{
-map features to mRNA
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
 get_align_function(num_bin, trans_info, cds_by_tx0)

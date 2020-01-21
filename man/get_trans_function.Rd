@@ -2,10 +2,10 @@
 \alias{get_trans_function}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function: get information about all of the isoform transcripts the input features located on
+
 }
 \description{
-get information about all of the isoform transcripts the input features located on
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
 get_trans_function(trans, methyl)

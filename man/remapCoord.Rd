@@ -2,10 +2,10 @@
 \alias{remapCoord}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function: map features to each bin over transcript
+
 }
 \description{
-map features to each bin over transcript
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
 remapCoord(features, txdb = NA, num_bin = 10, includeNeighborDNA = FALSE)

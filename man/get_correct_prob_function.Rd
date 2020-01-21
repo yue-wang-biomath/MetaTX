@@ -2,10 +2,10 @@
 \alias{get_correct_prob_function}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Function: Correct the feature probability 
+
 }
 \description{
-Correct the feature probability 
+%%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
 get_correct_prob_function(num_bin_sum, align_mtr, weight_mtr, trans_info)

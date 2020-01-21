@@ -2,10 +2,10 @@
 \alias{m6a_methyl_1}
 \docType{data}
 \title{
-Data: m6A sample 1
+
 }
 \description{
-m6A sample 1
+%%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
 \usage{data("m6a_methyl_1")}
 \format{

@@ -2,10 +2,10 @@
 \alias{threeUTR_SIM}
 \docType{data}
 \title{
-Data: 
+
 }
 \description{
-Check the distribution of mRNA components in the transcriptome
+%%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
 \usage{data("threeUTR_SIM")}
 \format{
