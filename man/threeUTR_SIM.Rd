@@ -2,7 +2,7 @@
 \alias{threeUTR_SIM}
 \docType{data}
 \title{
-%%   ~~ data name/kind ... ~~
+Data
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
