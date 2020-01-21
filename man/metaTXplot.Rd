@@ -2,7 +2,7 @@
 \alias{metaTXplot}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Sample data for checking CDS region
+%%  ~~function to do ... ~~
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

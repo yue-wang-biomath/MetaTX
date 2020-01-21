@@ -2,7 +2,7 @@
 \alias{cds_SIM}
 \docType{data}
 \title{
-Sample data for checking CDS region
+%%   ~~ data name/kind ... ~~
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~

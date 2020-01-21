@@ -38,9 +38,8 @@ function(num_bin, trans_info, cds_by_tx0){
     cds_width_ngtv_sum   <- sum(cds_width_ngtv)
     
     # pstv
-    compare_1            <- cds_start_pstv <= methyl_pos_pstv
-    compare_2            <- cds_end_pstv >= methyl_pos_pstv
-    align_index          <- intersect(which(compare_1), which(compare_2))
+    
+    align_index          <- intersect(which(cds_start_pstv <= methyl_pos_pstv), which(cds_end_pstv >= methyl_pos_pstv))
     dist_from_start      <- trans_cds_exist_pstv[, 'methyl_pos'] - cds_start_pstv[align_index] + 1
     align_index_before   <- which(cds_start_pstv <= methyl_pos_pstv) - 1
     width_from_start     <- cds_width_pstv[align_index_before]
@@ -58,9 +57,8 @@ function(num_bin, trans_info, cds_by_tx0){
     }
     
     # ngtv
-    compare_1            <- cds_start_ngtv <= methyl_pos_ngtv
-    compare_2            <- cds_end_ngtv >= methyl_pos_ngtv
-    align_index          <- intersect(which(compare_1), which(compare_2))
+    
+    align_index          <- intersect(which(cds_start_ngtv <= methyl_pos_ngtv), which(cds_end_ngtv >= methyl_pos_ngtv))
     
     dist_from_start      <- cds_end_ngtv[align_index] - trans_cds_exist_ngtv[, 'methyl_pos'] +1
     align_index_before   <- which(cds_start_ngtv >= methyl_pos_ngtv) -1
