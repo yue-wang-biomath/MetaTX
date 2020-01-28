@@ -85,7 +85,7 @@ isoformProb(features = m6A_methyl_1[1:1000],
 Then probabilities of a particular feature being located on different isoforms (the last column) can be returned.
 
 ```
-      index_trans index_methyl seqnames methyl_po strand trans_ID isoform_prob
+      index_trans index_methyl seqnames methyl_pos strand trans_ID isoform_prob
 1             1            1    chr19     581474      +    65776 2.022115e-01
 2             2            1    chr19     581474      +    65777 2.022115e-01
 3             3            1    chr19     581474      +    65778 2.030733e-01
