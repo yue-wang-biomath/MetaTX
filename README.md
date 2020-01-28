@@ -1,23 +1,29 @@
 # MetaTX
 ## Introduction
-The MetaTX is aimed for visualizing distribution of RNA-related genomic features in the transcriptome. 
-To install exomePeak2 from Github, use the following codes.
-```{r cars}
+The MetaTX is aimed for plotting the transcriptomic distribution of RNA-related genomic features.
+
+
+## Quick Start with MetaTX
+To install MetaTX from Github, please use the following codes.
+```{r introduction}
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c("SummarizedExperiment","cqn","Rsamtools",
-                       "GenomicAlignments","GenomicRanges","GenomicFeatures",
-                       "DESeq2","ggplot2","mclust",
-                       "genefilter","BSgenome","BiocParallel",
-                       "IRanges","S4Vectors","quantreg",
-                       "reshape2","rtracklayer","apeglm","RMariaDB"))
+BiocManager::install(c("GenomicAlignments","GenomicRanges","GenomicFeatures", "ggplot2",
+                       "TxDb.Hsapiens.UCSC.hg19.knownGene"))
 
 if (!requireNamespace("devtools", quietly = TRUE))
     install.packages("devtools")
 
 devtools::install_github("yue-wang-biomath/MetaTX")
 ```
+
+## Visualization of the transcriptomic distribution 
+It requires basic information of target feature set, involving the genomic locations, seqnames and strand types of each feature. The input feature set is required to be provided as a GRanges object. 
+
+The ```metaTXplot``` function enables the visualization of RNA-related genomic features. Please see the following example, which will read 9000 m6A methylation sites from the file m6A_methyl_1 into R and sketch the distribution of these features along mRNA.
+
+
 ![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure1.png)
 ![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure2.png)
 # References
