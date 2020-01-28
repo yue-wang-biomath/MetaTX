@@ -29,14 +29,12 @@ The ```metaTXplot``` function enables the visualization of RNA-related genomic f
 
 ```
 txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
-
 ```
 
 Load example dataset provided in the MetaTX package.
 
 ```
 data("m6A_methyl_1")
-
 ```
 
 Please see the following example, which will read 1000 m6A methylation sites from the file m6A_methyl_1 into R and sketch the distribution of these features along mRNA.
