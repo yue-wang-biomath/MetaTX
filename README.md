@@ -3,7 +3,7 @@
 The MetaTX is aimed for plotting the transcriptomic distribution of RNA-related genomic features.
 
 
-## Quick Start with MetaTX
+## 1. Quick Start with MetaTX
 
 To install MetaTX from Github, please use the following codes.
 
@@ -21,14 +21,15 @@ if (!requireNamespace("devtools", quietly = TRUE))
     install.packages("devtools")
 
 devtools::install_github("yue-wang-biomath/MetaTX")
+library('MetaTX')
 ```
 
 
-## Visualization of the transcriptomic distribution 
+## 2. Data preprocessing 
 
 It requires basic information of target feature set, involving the genomic locations, seqnames and strand types of each feature. The input feature set is required to be provided as a GRanges object. 
 
-The ```metaTXplot``` function enables the visualization of RNA-related genomic features. First, the TxDb object need to be downloaded.
+First, the TxDb object need to be downloaded.
 
 ```
 txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
@@ -40,18 +41,27 @@ Load example dataset provided in the MetaTX package.
 data("m6A_methyl_1")
 ```
 
-Please see the following example, which will read 1000 m6A methylation sites from the file m6A_methyl_1 into R and sketch the distribution of these features along mRNA.
+Please see the following example, which will read m6A methylation sites from the file (m6A_methyl_1.rda) into R and sketch the distribution of these features along mRNA. 
+
 
 ```
-metaTXplot(m6A_methyl_1[1:1000], 
-           txdb,  
-           num_bin = 10,
-           includeNeighborDNA = FALSE, 
-           comparison = FALSE,
-           lambda = 2,
-           adjust = 0.15,
-           title  = 'Distribution on mRNA',
-           legend = 'PA-seq')            
+remap_results_m6A <- remapCoord(features = m6A_methyl_1, txdb = txdb, num_bin = 10, includeNeighborDNA = TRUE) 
+``` 
+
+We provide this result stored in the file (remap_results_m6A.rda) 
+
+## 3. Visualization of the transcriptomic distribution 
+
+Use previously generated results  or provided file (remap_results_m6A.rda)
+
+```
+data("remap_results_m6A")
+```
+The ```metaTXplot``` function enables the visualization of RNA-related genomic features.
+```
+txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
+p1    <- metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE) 
+p1
 ``` 
 
 ![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure1.png)
@@ -60,29 +70,22 @@ metaTXplot(m6A_methyl_1[1:1000],
 The```metaTXplot``` function also enables the comparison between estimates via the MetaTX and the direct estimation method.
 
 ```
-metaTXplot(m6A_methyl_1[1:1000], 
-           txdb,  
-           num_bin = 10,
-           includeNeighborDNA = FALSE, 
-           comparison = TRUE,
-           lambda = 2,
-           adjust = 0.15,
-           title  = 'Distribution on mRNA',
-           legend = 'PA-seq')            
+p2    <- metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE, comparison = TRUE) 
+p2          
 ``` 
 
 ![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure2.png)
 
 
-## Resolving ambiguity problem
+## 4. Resolving ambiguity problem
 
 The package also provides an ```isoformProb``` function that can return the probabilities of a particular feature being located on different isoforms. 
 
 ```
-isoformProb(features = m6A_methyl_1[1:1000],
-            txdb,             
-            num_bin = 10,
-            includeNeighborDNA = TRUE)
+data("remap_results_m6A")
+txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
+isoform_probs <- isoformProb(remap_results_m6A, includeNeighborDNA = TRUE)
+
 ```
 
 Then probabilities of a particular feature being located on different isoforms (the last column) can be returned.
