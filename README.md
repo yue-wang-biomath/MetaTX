@@ -50,11 +50,11 @@ Please see the following example, which will read m6A methylation sites from the
 remap_results_m6A <- remapCoord(features = m6A_methyl_2, txdb = txdb, num_bin = 10, includeNeighborDNA = TRUE) 
 ``` 
 
-We provide this result and store it in the file ```remap_results_m6A.rda```
+We provide this result and store it in the file ```remap_results_m6A.rda```.
 
 ## 3. Visualization of the transcriptomic distribution 
 
-Use previously generated results or provided file (remap_results_m6A.rda)
+Use previously generated results or provided file ```remap_results_m6A.rda```.
 
 ```
 data("remap_results_m6A")
@@ -71,7 +71,7 @@ metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE)
 The```metaTXplot``` function also enables the comparison between estimates via the MetaTX and the direct estimation method.
 
 ```
-metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE, comparison = TRUE)         
+metaTXplot(remap_results_m6A, txdb, includeNeighborDNA = TRUE, comparison = TRUE)         
 ``` 
 
 ![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure2.png)
@@ -88,7 +88,7 @@ isoform_probs <- isoformProb(remap_results_m6A, includeNeighborDNA = TRUE)
 
 ```
 
-Then probabilities of a particular feature being located on different isoforms (the last column) can be returned.
+The probabilities of a particular feature being located on different isoforms (the last column) can be returned.
 
 ```
       index_trans index_methyl seqnames methyl_pos strand trans_ID isoform_prob
