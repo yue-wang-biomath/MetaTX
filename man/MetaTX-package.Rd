@@ -13,7 +13,6 @@
 The DESCRIPTION file:
 \packageDESCRIPTION{MetaTX}
 \packageIndices{MetaTX}
-~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
 \packageAuthor{MetaTX}
@@ -26,10 +25,16 @@ Maintainer: \packageMaintainer{MetaTX}
 ~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
 ~~ documentation directory ~~
 \keyword{ package }
-\seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-}
 \examples{
-~~ simple examples of the most important functions ~~
+## load remap_results_m6A
+data(remap_results_m6A)
+
+## download the txdb object from UCSC
+txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
+
+## plot
+p1 <- metaTXplot(remap_results_m6A, txdb,  
+           includeNeighborDNA = TRUE, 
+           comparison = TRUE)
+p1
 }
