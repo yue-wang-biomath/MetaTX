@@ -36,7 +36,7 @@ It requires basic information of target feature set, involving the genomic locat
 
 In the MetaTX package, we provide three example feature sets stored in the file ```m6A_methyl_1.rda```, ```m6A_methyl_2.rda``` and ```m6A_methyl_3.rda```. They are m6A datasets derived from different high-throughput sequencing approaches, including an miCLIP-seq dataset (Linder, et al., 2015; Olarerin-George and Jaffrey, 2017), a PA-m6A-seq dataset (Chen, et al., 2015) and an m6A-seq dataset (Schwartz, et al., 2014). 
 
-We will use the example ```data("m6A_methyl_2")``` to illustrate how to use MetaTX sketching feature distribution. Users can also use other RNA-related genomic feature datasets.
+We will use the example ```m6A_methyl_2.rda``` to illustrate how to use MetaTX sketching feature distribution. Users can also use other RNA-related genomic feature datasets.
 
 Load the example dataset provided in the MetaTX package. 
 ```
