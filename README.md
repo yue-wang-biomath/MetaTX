@@ -27,32 +27,33 @@ library('MetaTX')
 
 ## 2. Data preprocessing 
 
-It requires basic information of target feature set, involving the genomic locations, seqnames and strand types of each feature. The input feature set is required to be provided as a GRanges object. 
-
 First, the TxDb object need to be downloaded.
 
 ```
 txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
 ```
+It requires basic information of target feature set, involving the genomic locations, seqnames and strand types of each feature. The input feature set is required to be provided as a GRanges object.
 
-Load example dataset provided in the MetaTX package.
+In the MetaTX package, we provide the three example feature sets stored in the file ```m6A_methyl_1.rda```, ```m6A_methyl_2.rda``` and ```m6A_methyl_3.rda```. They are m6A datasets derived from different high-throughput sequencing approaches, including a an miCLIP-seq dataset (Linder, et al., 2015; Olarerin-George and Jaffrey, 2017), a PA-m6A-seq dataset (Chen, et al., 2015) and an m6A-seq dataset (Schwartz, et al., 2014). We will provide an example ```data("m6A_methyl_2")``` to illustrate how to use MetaTX sketching feature distribution. Users can also use other RNA-related genomic feature datasets.
+
+
+Load one example dataset provided in the MetaTX package. 
+```
+data("m6A_methyl_2")
+```
+
+Please see the following example, which will read m6A methylation sites from the file (m6A_methyl_2.rda) into R and map these features to an mRNA model. 
+
 
 ```
-data("m6A_methyl_1")
-```
-
-Please see the following example, which will read m6A methylation sites from the file (m6A_methyl_1.rda) into R and sketch the distribution of these features along mRNA. 
-
-
-```
-remap_results_m6A <- remapCoord(features = m6A_methyl_1, txdb = txdb, num_bin = 10, includeNeighborDNA = TRUE) 
+remap_results_m6A <- remapCoord(features = m6A_methyl_2, txdb = txdb, num_bin = 10, includeNeighborDNA = TRUE) 
 ``` 
 
-We provide this result stored in the file (remap_results_m6A.rda) 
+We provide this result and store it in the file ```remap_results_m6A.rda```
 
 ## 3. Visualization of the transcriptomic distribution 
 
-Use previously generated results  or provided file (remap_results_m6A.rda)
+Use previously generated results or provided file (remap_results_m6A.rda)
 
 ```
 data("remap_results_m6A")
@@ -60,8 +61,7 @@ data("remap_results_m6A")
 The ```metaTXplot``` function enables the visualization of RNA-related genomic features.
 ```
 txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
-p1    <- metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE) 
-p1
+metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE) 
 ``` 
 
 ![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure1.png)
@@ -70,8 +70,7 @@ p1
 The```metaTXplot``` function also enables the comparison between estimates via the MetaTX and the direct estimation method.
 
 ```
-p2    <- metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE, comparison = TRUE) 
-p2          
+metaTXplot(remap_results_m6A, txdb,  includeNeighborDNA = TRUE, comparison = TRUE)         
 ``` 
 
 ![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure2.png)
