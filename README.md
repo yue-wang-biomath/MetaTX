@@ -43,7 +43,7 @@ Load the example dataset provided in the MetaTX package.
 data("m6A_methyl_2")
 ```
 
-Please see the following example, which will read m6A methylation sites from the file (m6A_methyl_2.rda) into R and map these features to an mRNA model. 
+Please see the following example, which will read m6A methylation sites from the file ```m6A_methyl_2.rda``` into R and map these features to an mRNA model. 
 
 
 ```
