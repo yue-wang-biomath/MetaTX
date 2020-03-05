@@ -10,7 +10,7 @@ function(    remap_results,
 
     # function 1
     get_correct_prob_function <-
-    function(num_bin_sum, align_mtr, weight_mtr, trans_info){
+    function(num_bin_sum, align_mtr, weight_mtr, trans_info, lambda){
       
       alpha                     <- matrix(1/num_bin_sum, 1, num_bin_sum)
       index_methyl              <- trans_info[, 'index_methyl']
