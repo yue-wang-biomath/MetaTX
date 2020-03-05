@@ -14,9 +14,6 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 BiocManager::install(c("GenomicAlignments","GenomicRanges","GenomicFeatures", "ggplot2",
                        "TxDb.Hsapiens.UCSC.hg19.knownGene"))
                
-library(c("GenomicAlignments","GenomicRanges","GenomicFeatures", "ggplot2",
-                       "TxDb.Hsapiens.UCSC.hg19.knownGene"))
-
 if (!requireNamespace("devtools", quietly = TRUE))
     install.packages("devtools")
 
