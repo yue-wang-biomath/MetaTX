@@ -20,7 +20,6 @@ if (!requireNamespace("devtools", quietly = TRUE))
 devtools::install_github("yue-wang-biomath/MetaTX")
 library('MetaTX')
 ```
-or use the link (https://api.github.com/repos/yue-wang-biomath/MetaTX/tarball/master).
 
 
 ## 2. Data preprocessing 
