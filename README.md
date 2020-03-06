@@ -5,7 +5,7 @@ The MetaTX is aimed for plotting the transcriptomic distribution of RNA-related 
 
 ## 1. Quick Start with MetaTX
 
-To install MetaTX from Github, please use the following codes.
+To install MetaTX from Github, please use the following codes,
 
 ```{r introduction}
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -20,6 +20,7 @@ if (!requireNamespace("devtools", quietly = TRUE))
 devtools::install_github("yue-wang-biomath/MetaTX")
 library('MetaTX')
 ```
+or use the link (https://api.github.com/repos/yue-wang-biomath/MetaTX/tarball/master).
 
 
 ## 2. Data preprocessing 
