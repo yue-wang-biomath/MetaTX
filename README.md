@@ -20,7 +20,7 @@ if (!requireNamespace("devtools", quietly = TRUE))
 devtools::install_github("yue-wang-biomath/MetaTX/MetaTX")
 library('MetaTX')
 ```
-Or you can download directly from ```MetaTX_1.0.tar```. 
+Or you can download directly from ```MetaTX_1.0.tar.gz```. 
 
 ## 2. Data preprocessing 
 
