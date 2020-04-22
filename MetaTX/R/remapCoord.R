@@ -308,8 +308,8 @@ remapCoord <-
       width_promoter         <- 1000
       width_tail             <- 1000
       num_bin_sum            <- num_bin_sum + num_bin_promoter + num_bin_tail 
-      promoter_align         <- get_promoter_function(width_promoter, num_bin_promoter, fiveUTR_align, fiveUTR_tx0, sample_methyl)
-      tail_align             <- get_tail_function(width_tail, num_bin_tail, threeUTR_align, threeUTR_tx0, sample_methyl)
+      promoter_align         <- get_promoter_function(width_promoter, num_bin_promoter, fiveUTR_align, fiveUTR_tx0, methyl)
+      tail_align             <- get_tail_function(width_tail, num_bin_tail, threeUTR_align, threeUTR_tx0, methyl)
       
       # get alignment matrix (with promoter and tail)
       align_mtr              <- data.frame(coordinate = cbind(promoter_align[, paste0('coordinate.', 1:num_bin_promoter)]
