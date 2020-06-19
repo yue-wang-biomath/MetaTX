@@ -109,7 +109,7 @@ ggdraw() +
     draw_plot(p4, .5, 0, .5, .5) 
 ``` 
 
-![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/Fig1.png)
+![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/Fig.png)
 
 ## 4. Resolving ambiguity problem
 
