@@ -114,9 +114,10 @@ ggdraw() +
 The package also provides an ```isoformProb``` function that can return the probabilities of a particular feature being located on different isoforms. 
 
 ```
-data("remap_results_m6A")
-txdb  <- TxDb.Hsapiens.UCSC.hg19.knownGene
-isoform_probs <- isoformProb(remap_results_m6A, includeNeighborDNA = TRUE)
+# load remap_results_m6A_1
+data(remap_results_m6A_1)
+
+isoform_probs <- isoformProb(remap_results_m6A_1, num_bin = 10, includeNeighborDNA = TRUE, lambda = 2)
 
 ```
 
