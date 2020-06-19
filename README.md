@@ -48,9 +48,9 @@ Please see the following example, which will read m6A methylation sites from the
 
 ```
 remap_results_m6A_1 <- remapCoord(features = m6A_methyl_1, txdb = txdb, num_bin = 10, includeNeighborDNA = TRUE,
-                                cds_by_tx0         = cds_by_tx0_1, 
-                                fiveUTR_tx0        = fiveUTR_tx0_1,
-                                threeUTR_tx0       = threeUTR_tx0_1) 
+                                  cds_by_tx0         = cds_by_tx0_1, 
+                                  fiveUTR_tx0        = fiveUTR_tx0_1,
+                                  threeUTR_tx0       = threeUTR_tx0_1) 
 ``` 
 
 We provide this result and store it in the file ```remap_results_m6A_1.rda```.
@@ -103,10 +103,11 @@ p4 <-  metaTXplot(remap_results_m6A_1,
 ggdraw() +
     draw_plot(p1, 0, .5, .5, .5) +
     draw_plot(p2, .5, .5, .5, .5) +
-    draw_plot(p3, 0, 0, .5, .5) +     draw_plot(p4, .5, 0, .5, .5) 
+    draw_plot(p3, 0, 0, .5, .5) +     
+    draw_plot(p4, .5, 0, .5, .5) 
 ``` 
 
-![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/figure.png)
+![image](https://github.com/yue-wang-biomath/MetaTX/blob/master/Fig1.png)
 
 ## 4. Resolving ambiguity problem
 
