@@ -62,7 +62,9 @@ Use previously generated results or provided file ```remap_results_m6A_1.rda```.
 ```
 data("remap_results_m6A_1")
 ```
-The ```metaTXplot``` function enables the visualization of RNA-related genomic features. m6A pattern is visualized with the promoter/5’UTR/CDS/3’UTR/tail ratio of 1:1:1:1:1 (a, c) and 3:1:3:2:3 (b, d). MetaTX R package supports two different ways of visualization. The ‘absolute’ method (a, b) provides absolute density (with the unit: number of features per bp exon transcript), which will not be affected by the relative length of different RNA components defined by the user. The ‘relative’ method (c, d) provides probability density function (with the area under the curve equals to 1), which can be affected by the relative length of different RNA components specified by user.
+The ```metaTXplot``` function enables the visualization of RNA-related genomic features. 
+
+As shown in the following codes, m6A pattern is visualized with the promoter/5’UTR/CDS/3’UTR/tail ratio of 1:1:1:1:1 (a, c) and 3:1:3:2:3 (b, d). MetaTX R package supports two different ways of visualization. The ‘absolute’ method (a, b) provides absolute density (with the unit: number of features per bp exon transcript), which will not be affected by the relative length of different RNA components defined by the user. The ‘relative’ method (c, d) provides probability density function (with the area under the curve equals to 1), which can be affected by the relative length of different RNA components specified by user.
 ```
 p1 <-  metaTXplot(remap_results_m6A_1,
                  num_bin              = 10,
