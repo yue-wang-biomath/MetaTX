@@ -16,7 +16,7 @@ listmodel = 0.2.1
 * The input object should be a list of [1, -1, 4] representing a query sequence.  
 * The output would be a vector of values. Each element ranges from 0 to 1 and represents the probability of its corresponding task.  
 
-  References  
+## References  
 Chen, K. et al. (2014) High-resolution N6-methyladenosine (m6A) map using photo-crosslinking-assisted m6A sequencing. Angew. Chem. Int. Ed., 54, 1587-1590. (https://doi.org/10.1002/anie.201410647)
 
 Linder,B. et al. (2015) Single-nucleotide-resolution mapping of m6A and m6Am throughout the transcriptome. Nat. Methods, 12, 767–772. (https://doi.org/10.1038/nmeth.3453)
