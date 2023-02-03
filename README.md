@@ -19,7 +19,7 @@ listmodel = 0.2.1
 * The output would be a vector of values. Each element ranges from 0 to 1 and represents the probability of its corresponding task.  
 * The test.py is provided for converting .fasta file into the input sequence as requested, training a multi-task AdaptRM model and returning a .csv prediction file.  
 
-4.   References  
+4.  References  
 Rush A., The Annotated Transformer. In Proceedings of Workshop for NLP Open Source Software (NLP-OSS), 2018.(https://doi.org/10.18653/v1/W18-2509)
 
 Dosovitskiy A., Beyer L., Kolesnikov A., et al. An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. In International Conference on Learning Representations. 2021. (https://doi.org/10.48550/arXiv.2010.11929)
