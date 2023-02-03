@@ -1,7 +1,7 @@
 ## AdaptRM 
 
 1.	**Description**  
-AdaptRM has a multi-tasking framework for the synergetic learning of epitranscriptomes. It was enabled by the adaptive pooling and several standard convolution blocks. Trained for an integrated multi-task formulated by three case studies, the model can operate on both low-resolution and high-resolution datasets without further preprocessing the input primary sequence, and conduct tissue-specific and type-specific prediction according to users’ needs. 
+AdaptRM has a multi-task framework for the synergetic learning of epitranscriptomes. It was enabled by the adaptive pooling and several standard convolution blocks. Trained for an integrated multi-task formulated by three case studies, the model can operate on both low-resolution and high-resolution datasets without further preprocessing the input primary sequence, and conduct tissue-specific and type-specific prediction according to users’ needs. 
 
 2.	**Requirements**  
 Before prediction, please make sure the following packages are installed in the Python environment:  
