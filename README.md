@@ -17,6 +17,7 @@ listmodel = 0.2.1
 3.	Input and output  
 * The input object should be a list of [1, -1, 4] representing a query sequence.  
 * The output would be a vector of values. Each element ranges from 0 to 1 and represents the probability of its corresponding task.  
+* The test.py is provided for converting .fasta file into the input sequence as requested, training a multi-task AdaptRM model and returning a .csv prediction file.  
 
 ## References  
 Chen, K. et al. (2014) High-resolution N6-methyladenosine (m6A) map using photo-crosslinking-assisted m6A sequencing. Angew. Chem. Int. Ed., 54, 1587-1590. (https://doi.org/10.1002/anie.201410647)
