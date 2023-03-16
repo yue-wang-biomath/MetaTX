@@ -1,1 +1,1 @@
-Please go into https://github.com/yue-wang-biomath/MetaTX.1.0
+Please go to https://github.com/yue-wang-biomath/MetaTX.1.0
